@@ -1,0 +1,124 @@
+[
+  {
+    "id": 101,
+    "title": "Managing Stress Better - Introduction",
+    "description": "WHO educational video series about practical skills for coping with stress.",
+    "resource_type": "video",
+    "topic": "stress management",
+    "contexts": [
+      "general",
+      "student"
+    ],
+    "problem_tags": [
+      "stress",
+      "academic_pressure",
+      "work_pressure"
+    ],
+    "goals": [
+      "coping",
+      "understanding"
+    ],
+    "intent": "video_request",
+    "emotion": "stress",
+    "url": "https://www.who.int/southeastasia/news/feature-stories/mental-well-being-resources-for-the-public/how-to-manage-stress-better--introduction-part-2",
+    "source": "World Health Organization",
+    "active": true
+  },
+  {
+    "id": 102,
+    "title": "Managing Stress - Focus on the World Around You",
+    "description": "WHO video about reconnecting attention with the world around you during stress.",
+    "resource_type": "video",
+    "topic": "grounding and stress",
+    "contexts": [
+      "general",
+      "student"
+    ],
+    "problem_tags": [
+      "stress",
+      "concentration",
+      "academic_pressure"
+    ],
+    "goals": [
+      "coping",
+      "focus"
+    ],
+    "intent": "video_request",
+    "emotion": "stress",
+    "url": "https://www.who.int/mongolia/multi-media/item/managing-stress---focus-on-the-world-around-you",
+    "source": "World Health Organization",
+    "active": true
+  },
+  {
+    "id": 103,
+    "title": "Need to Relax? Take a Break for Meditation",
+    "description": "Mayo Clinic guided relaxation video for taking a short pause and focusing on breathing.",
+    "resource_type": "video",
+    "topic": "relaxation",
+    "contexts": [
+      "general",
+      "student"
+    ],
+    "problem_tags": [
+      "stress",
+      "work_pressure",
+      "academic_pressure"
+    ],
+    "goals": [
+      "coping"
+    ],
+    "intent": "video_request",
+    "emotion": "stress",
+    "url": "https://www.mayoclinic.org/healthy-lifestyle/stress-management/multimedia/meditation/vid-20084741",
+    "source": "Mayo Clinic",
+    "active": true
+  },
+  {
+    "id": 104,
+    "title": "Mental Health Minute: Anxiety Disorders in Adults",
+    "description": "NIMH educational video resource about anxiety disorders and mental health support.",
+    "resource_type": "video",
+    "topic": "anxiety education",
+    "contexts": [
+      "general"
+    ],
+    "problem_tags": [
+      "worry",
+      "anxiety",
+      "fear"
+    ],
+    "goals": [
+      "understanding"
+    ],
+    "intent": "video_request",
+    "emotion": "fear",
+    "url": "https://www.nimh.nih.gov/news/media/index-anxiety-disorders",
+    "source": "National Institute of Mental Health",
+    "active": true
+  },
+  {
+    "id": 105,
+    "title": "GREAT: Helpful Practices to Manage Stress and Anxiety",
+    "description": "NIMH educational video resource covering helpful practices for stress and anxiety.",
+    "resource_type": "video",
+    "topic": "stress and anxiety",
+    "contexts": [
+      "general",
+      "student"
+    ],
+    "problem_tags": [
+      "stress",
+      "anxiety",
+      "academic_pressure"
+    ],
+    "goals": [
+      "coping",
+      "understanding"
+    ],
+    "intent": "video_request",
+    "emotion": "stress",
+    "url": "https://www.nimh.nih.gov/news/media/index-stress",
+    "source": "National Institute of Mental Health",
+    "active": true
+  }
+]

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="csrf-token" content="{{ csrf_token() }}">
+<title>Chat - Mental Health Support Chatbot</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="chat-shell">
+    <header>
+      <span>Hi, {{ username }}</span>
+      <form method="POST" action="{{ url_for('auth.logout') }}" class="logout-form">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button type="submit" class="logout-button">Log out</button>
+      </form>
+    </header>
+
+    <div id="messages" class="messages"></div>
+
+    <!-- Part 27: guided options get their own clearly-labeled area -->
+    <div id="guided-area" class="guided-area" style="display:none;">
+      <div class="guided-label">How are you feeling?</div>
+      <div id="guided-options" class="guided-options"></div>
+    </div>
+
+    <!-- Part 16: correction affordance after a model-based response -->
+    <div id="correction-area" class="correction-area" style="display:none;">
+      <span class="correction-label">Did I get that right?</span>
+      <button id="correction-yes" type="button">Yes</button>
+      <button id="correction-no" type="button">No, let me choose</button>
+    </div>
+    <div id="correction-options" class="guided-options" style="display:none;"></div>
+
+    <div class="video-language-row">
+      <label for="video-language">Generated video narration:</label>
+      <select id="video-language" aria-label="Generated video narration language">
+        <option value="en" selected>English</option>
+        <option value="hi">Hindi</option>
+      </select>
+      <span class="language-note">Applies to generated videos; curated videos keep their original language.</span>
+    </div>
+
+    <form id="chat-form">
+      <input type="text" id="chat-input" placeholder="Type how you're feeling..." autocomplete="off" maxlength="1000">
+      <button type="submit">Send</button>
+    </form>
+
+    <p class="disclaimer">This chatbot offers supportive conversation and general well-being resources.
+      It does not diagnose conditions and is not a replacement for a qualified mental-health professional.
+      If you are in crisis, please contact local emergency services or a crisis helpline.</p>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>

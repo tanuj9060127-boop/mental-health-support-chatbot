@@ -1,0 +1,79 @@
+{
+  "joy": [
+    {
+      "id": 1,
+      "title": "Caring for Your Mental Health",
+      "description": "General self-care overview from a federal mental-health research agency: what self-care means, and how it supports ongoing wellbeing (not tied to any specific emotion or diagnosis).",
+      "category": "joy",
+      "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health",
+      "source": "National Institute of Mental Health (NIMH)",
+      "active": true
+    }
+  ],
+  "sadness": [
+    {
+      "id": 2,
+      "title": "Depression: Overview and Where to Learn More",
+      "description": "Educational overview of low mood/depression from NIMH, including where to find more information and how to find professional help. This is general information, not a diagnosis.",
+      "category": "sadness",
+      "url": "https://www.nimh.nih.gov/health/topics/depression",
+      "source": "National Institute of Mental Health (NIMH)",
+      "active": true
+    }
+  ],
+  "anger": [
+    {
+      "id": 3,
+      "title": "Anger Management: 10 Tips to Tame Your Temper",
+      "description": "Practical, medically reviewed tips for managing anger in the moment and over time, from a nonprofit academic medical center.",
+      "category": "anger",
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/anger-management/art-20045434",
+      "source": "Mayo Clinic",
+      "active": true
+    }
+  ],
+  "fear": [
+    {
+      "id": 4,
+      "title": "Anxiety Disorders",
+      "description": "Overview of anxiety and worry, common signs, and options for getting support, from a federal mental-health research agency.",
+      "category": "fear",
+      "url": "https://www.nimh.nih.gov/health/topics/anxiety-disorders",
+      "source": "National Institute of Mental Health (NIMH)",
+      "active": true
+    }
+  ],
+  "stress": [
+    {
+      "id": 5,
+      "title": "20 Ways to Relieve Stress",
+      "description": "Practical, expert-reviewed stress-relief techniques covering daily habits, relaxation, and when to seek extra support.",
+      "category": "stress",
+      "url": "https://health.clevelandclinic.org/how-to-relieve-stress/",
+      "source": "Cleveland Clinic",
+      "active": true
+    }
+  ],
+  "confusion": [
+    {
+      "id": 6,
+      "title": "Meditation and Mindfulness: What You Need to Know",
+      "description": "Introductory, research-based overview of mindfulness practices that can help with noticing and naming emotions when they feel unclear.",
+      "category": "confusion",
+      "url": "https://www.nccih.nih.gov/health/meditation-and-mindfulness-what-you-need-to-know",
+      "source": "National Center for Complementary and Integrative Health (NCCIH)",
+      "active": true
+    }
+  ],
+  "neutral": [
+    {
+      "id": 7,
+      "title": "Caring for Your Mental Health",
+      "description": "General wellbeing self-care overview, suitable as a default resource when no specific emotion category stands out.",
+      "category": "neutral",
+      "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health",
+      "source": "National Institute of Mental Health (NIMH)",
+      "active": true
+    }
+  ]
+}

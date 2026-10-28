@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="csrf-token" content="{{ csrf_token() }}">
+<title>Mental Health Support Chatbot</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="auth-card">
+    <h1>Mental Health Support Chatbot</h1>
+    <p class="subtitle">A supportive space to check in - not a substitute for professional care.</p>
+
+    {% if error %}<p class="error">{{ error }}</p>{% endif %}
+
+    {% if mode == 'register' %}
+      <form method="POST" action="{{ url_for('auth.register') }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <input type="text" name="username" placeholder="Choose a username (letters, numbers, _)" required>
+        <input type="password" name="password" placeholder="Choose a password (8–1024 characters)" minlength="8" maxlength="1024" required>
+        <button type="submit">Register</button>
+      </form>
+      <p>Already have an account? <a href="{{ url_for('auth.login') }}">Log in</a></p>
+    {% else %}
+      <form method="POST" action="{{ url_for('auth.login') }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" minlength="8" maxlength="1024" required>
+        <button type="submit">Log in</button>
+      </form>
+      <p>New here? <a href="{{ url_for('auth.register') }}">Create an account</a></p>
+    {% endif %}
+  </div>
+</body>
+</html>

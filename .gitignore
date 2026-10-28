@@ -1,0 +1,53 @@
+# Python bytecode and test caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and local database exports
+*.log
+*.sql.gz
+*.dump
+*.bak
+
+# Generated media and temporary speech files
+static/generated_videos/*
+!static/generated_videos/.gitkeep
+*.mp3
+*.wav
+*.m4a
+video_build_*/
+
+# Editors and operating-system metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Local databases and database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Environment and credential files
+.env
+.env.*
+!.env.example
+
+# Python virtual environment
+.venv/
+
+# Local development artifacts
+test_narration.mp3
+check_video_audio.py

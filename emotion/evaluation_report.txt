@@ -1,0 +1,63 @@
+Adaptive Mental Health Chatbot - Emotion Classifier Evaluation
+=================================================================
+Dataset file: emotion/dataset.csv
+Dataset size: 284
+
+Examples per class:
+  anger        40
+  confusion    45
+  fear         40
+  joy          40
+  neutral      40
+  sadness      39
+  stress       40
+
+Train: 198   Validation: 43   Test: 43
+
+-----------------------------------------------------------------
+VALIDATION SET (used only for threshold/tuning decisions)
+-----------------------------------------------------------------
+Validation accuracy: 0.628
+
+-----------------------------------------------------------------
+TEST SET (held out, final unbiased evaluation)
+-----------------------------------------------------------------
+Test accuracy: 0.558
+
+Classification report (precision / recall / F1 per class):
+              precision    recall  f1-score   support
+
+       anger       0.30      0.50      0.38         6
+   confusion       0.83      0.71      0.77         7
+        fear       0.71      0.83      0.77         6
+         joy       0.00      0.00      0.00         6
+     neutral       0.67      0.67      0.67         6
+     sadness       0.75      0.50      0.60         6
+      stress       0.67      0.67      0.67         6
+
+    accuracy                           0.56        43
+   macro avg       0.56      0.55      0.55        43
+weighted avg       0.57      0.56      0.55        43
+
+Confusion matrix (rows = actual, columns = predicted):
+                 anger  confusio      fear       joy   neutral   sadness    stress
+anger                3         0         1         1         0         1         0
+confusion            0         5         0         0         0         0         2
+fear                 0         0         5         0         1         0         0
+joy                  4         0         1         0         1         0         0
+neutral              0         1         0         1         4         0         0
+sadness              3         0         0         0         0         3         0
+stress               0         0         0         2         0         0         4
+
+-----------------------------------------------------------------
+NOTES / LIMITATIONS (see also README.md and Part 31)
+-----------------------------------------------------------------
+- This dataset is small (a few dozen examples per class). These
+  numbers describe how this specific model performs on this
+  specific held-out split - they are NOT a general claim about
+  real-world accuracy on unseen users' phrasing.
+- The model is NOT clinically validated and does not diagnose
+  any mental-health condition. It classifies expressed emotional
+  language only.
+- CONFIDENCE_THRESHOLD (config.py) is an application-level
+  decision threshold, not a clinical confidence measure.

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Something went wrong</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="auth-card">
+    <h1>Something went wrong</h1>
+    <p class="subtitle">{{ message or "Please try again in a moment." }}</p>
+    <a href="{{ url_for('auth.login') }}">Go back</a>
+  </div>
+</body>
+</html>
